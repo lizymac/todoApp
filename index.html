@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My TODO App</title>
+    <script
+      src="https://kit.fontawesome.com/aa82e4bde6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/morph/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1 class="display-4 text-center">
+        <i class="fa-regular fa-calendar-check text-primary"></i> My<span
+          class="text-primary"
+          >TODO</span
+        >App
+      </h1>
+
+      <form id="todo-form" style="margin-bottom: 8rem">
+        <div class="form-group me-4" style="width: 70%; float: left">
+          <label for="task" style="font-size: 1.2em; color: black"
+            >Add Task:</label
+          >
+          <input type="text" id="task" class="form-control" />
+        </div>
+
+        <input
+          type="submit"
+          value="Add"
+          class="btn btn-md btn-outline-primary mt-4 float-start w-25"
+        />
+      </form>
+
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th style="font-size: 2em; color: black"><strong>Task</strong></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="todo-list"></tbody>
+      </table>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
